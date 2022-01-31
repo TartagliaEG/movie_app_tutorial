@@ -1,4 +1,4 @@
-import '../../domain/entities/video_entity.dart';
+import '../../repositories/entities/video_entity.dart';
 
 class VideoModel extends VideoEntity {
   final String? id;

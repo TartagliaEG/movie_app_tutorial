@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:dartz/dartz.dart';
 
-import '../../domain/entities/app_error.dart';
-import '../../domain/repositories/authentication_repository.dart';
+import '../../repositories/entities/app_error.dart';
+import '../../repositories/repositories/authentication_repository.dart';
 import '../core/unathorised_exception.dart';
 import '../data_sources/authentication_local_data_source.dart';
 import '../data_sources/authentication_remote_data_source.dart';

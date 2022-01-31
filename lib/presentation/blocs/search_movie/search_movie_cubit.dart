@@ -3,10 +3,10 @@ import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../domain/entities/app_error.dart';
-import '../../../domain/entities/movie_entity.dart';
-import '../../../domain/entities/movie_search_params.dart';
-import '../../../domain/usecases/search_movies.dart';
+import '../../../repositories/entities/app_error.dart';
+import '../../../repositories/entities/movie_entity.dart';
+import '../../../repositories/entities/movie_search_params.dart';
+import '../../../repositories/usecases/search_movies.dart';
 import '../loading/loading_cubit.dart';
 
 part 'search_movie_state.dart';

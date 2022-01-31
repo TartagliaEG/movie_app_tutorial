@@ -2,10 +2,10 @@ import 'package:bloc/bloc.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 
-import '../../../domain/entities/app_error.dart';
-import '../../../domain/entities/movie_detail_entity.dart';
-import '../../../domain/entities/movie_params.dart';
-import '../../../domain/usecases/get_movie_detail.dart';
+import '../../../repositories/entities/app_error.dart';
+import '../../../repositories/entities/movie_detail_entity.dart';
+import '../../../repositories/entities/movie_params.dart';
+import '../../../repositories/usecases/get_movie_detail.dart';
 import '../cast/cast_cubit.dart';
 import '../favorite/favorite_cubit.dart';
 import '../loading/loading_cubit.dart';

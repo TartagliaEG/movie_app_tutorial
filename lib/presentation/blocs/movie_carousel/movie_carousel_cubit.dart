@@ -2,10 +2,10 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../domain/entities/app_error.dart';
-import '../../../domain/entities/movie_entity.dart';
-import '../../../domain/entities/no_params.dart';
-import '../../../domain/usecases/get_trending.dart';
+import '../../../repositories/entities/app_error.dart';
+import '../../../repositories/entities/movie_entity.dart';
+import '../../../repositories/entities/no_params.dart';
+import '../../../repositories/usecases/get_trending.dart';
 import '../loading/loading_cubit.dart';
 import '../movie_backdrop/movie_backdrop_cubit.dart';
 

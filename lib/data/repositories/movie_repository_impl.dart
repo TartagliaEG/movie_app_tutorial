@@ -2,9 +2,9 @@ import 'dart:io';
 
 import 'package:dartz/dartz.dart';
 
-import '../../domain/entities/app_error.dart';
-import '../../domain/entities/movie_entity.dart';
-import '../../domain/repositories/movie_repository.dart';
+import '../../repositories/entities/app_error.dart';
+import '../../repositories/entities/movie_entity.dart';
+import '../../repositories/repositories/movie_repository.dart';
 import '../data_sources/movie_local_data_source.dart';
 import '../data_sources/movie_remote_data_source.dart';
 import '../models/cast_crew_result_data_model.dart';

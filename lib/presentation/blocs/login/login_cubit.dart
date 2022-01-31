@@ -4,11 +4,11 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../common/constants/translation_constants.dart';
-import '../../../domain/entities/app_error.dart';
-import '../../../domain/entities/login_request_params.dart';
-import '../../../domain/entities/no_params.dart';
-import '../../../domain/usecases/login_user.dart';
-import '../../../domain/usecases/logout_user.dart';
+import '../../../repositories/entities/app_error.dart';
+import '../../../repositories/entities/login_request_params.dart';
+import '../../../repositories/entities/no_params.dart';
+import '../../../repositories/usecases/login_user.dart';
+import '../../../repositories/usecases/logout_user.dart';
 import '../loading/loading_cubit.dart';
 
 part 'login_state.dart';

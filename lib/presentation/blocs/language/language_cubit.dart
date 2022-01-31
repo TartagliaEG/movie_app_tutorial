@@ -4,10 +4,10 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 
 import '../../../common/constants/languages.dart';
-import '../../../domain/entities/language_entity.dart';
-import '../../../domain/entities/no_params.dart';
-import '../../../domain/usecases/get_preferred_language.dart';
-import '../../../domain/usecases/update_language.dart';
+import '../../../repositories/entities/language_entity.dart';
+import '../../../repositories/entities/no_params.dart';
+import '../../../repositories/usecases/get_preferred_language.dart';
+import '../../../repositories/usecases/update_language.dart';
 
 part 'language_state.dart';
 

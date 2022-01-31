@@ -1,4 +1,4 @@
-import '../../domain/entities/movie_detail_entity.dart';
+import '../../repositories/entities/movie_detail_entity.dart';
 
 class MovieDetailModel extends MovieDetailEntity {
   final bool? adult;
@@ -61,6 +61,7 @@ class MovieDetailModel extends MovieDetailEntity {
           voteAverage: voteAverage,
           backdropPath: backdropPath,
           posterPath: posterPath,
+          runtime: runtime,
         );
 
   factory MovieDetailModel.fromJson(Map<String, dynamic> json) {

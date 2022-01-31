@@ -2,12 +2,12 @@ import 'package:bloc/bloc.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 
-import '../../../domain/entities/app_error.dart';
-import '../../../domain/entities/movie_entity.dart';
-import '../../../domain/entities/no_params.dart';
-import '../../../domain/usecases/get_coming_soon.dart';
-import '../../../domain/usecases/get_playing_now.dart';
-import '../../../domain/usecases/get_popular.dart';
+import '../../../repositories/entities/app_error.dart';
+import '../../../repositories/entities/movie_entity.dart';
+import '../../../repositories/entities/no_params.dart';
+import '../../../repositories/usecases/get_coming_soon.dart';
+import '../../../repositories/usecases/get_playing_now.dart';
+import '../../../repositories/usecases/get_popular.dart';
 
 part 'movie_tabbed_state.dart';
 

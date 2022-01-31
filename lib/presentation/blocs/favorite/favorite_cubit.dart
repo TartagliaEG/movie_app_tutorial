@@ -3,14 +3,14 @@ import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../domain/entities/app_error.dart';
-import '../../../domain/entities/movie_entity.dart';
-import '../../../domain/entities/movie_params.dart';
-import '../../../domain/entities/no_params.dart';
-import '../../../domain/usecases/check_if_movie_favorite.dart';
-import '../../../domain/usecases/delete_favorite_movie.dart';
-import '../../../domain/usecases/get_favorite_movies.dart';
-import '../../../domain/usecases/save_movie.dart';
+import '../../../repositories/entities/app_error.dart';
+import '../../../repositories/entities/movie_entity.dart';
+import '../../../repositories/entities/movie_params.dart';
+import '../../../repositories/entities/no_params.dart';
+import '../../../repositories/usecases/check_if_movie_favorite.dart';
+import '../../../repositories/usecases/delete_favorite_movie.dart';
+import '../../../repositories/usecases/get_favorite_movies.dart';
+import '../../../repositories/usecases/save_movie.dart';
 
 part 'favorite_state.dart';
 

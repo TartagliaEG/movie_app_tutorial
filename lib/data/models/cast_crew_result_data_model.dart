@@ -1,4 +1,4 @@
-import '../../domain/entities/cast_entity.dart';
+import '../../repositories/entities/cast_entity.dart';
 
 class CastCrewResultModel {
   final int id;
