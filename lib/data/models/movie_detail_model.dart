@@ -61,6 +61,7 @@ class MovieDetailModel extends MovieDetailEntity {
           voteAverage: voteAverage,
           backdropPath: backdropPath,
           posterPath: posterPath,
+          runtime: runtime,
         );
 
   factory MovieDetailModel.fromJson(Map<String, dynamic> json) {

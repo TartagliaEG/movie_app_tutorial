@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:movieapp/domain/entities/movie_entity.dart';
 
 import '../../../../common/constants/size_constants.dart';
 import '../../../../common/constants/translation_constants.dart';
@@ -21,8 +22,8 @@ class _MovieTabbedWidgetState extends State<MovieTabbedWidget>
     with SingleTickerProviderStateMixin {
   MovieTabbedCubit get movieTabbedCubit =>
       BlocProvider.of<MovieTabbedCubit>(context);
-
   int currentTabIndex = 0;
+  List<MovieEntity> list = [];
 
   @override
   void initState() {

@@ -1,4 +1,4 @@
-import '../../../domain/entities/video_entity.dart';
+import 'package:movieapp/domain/entities/video_entity.dart';
 
 class WatchVideoArguments {
   final List<VideoEntity> videos;

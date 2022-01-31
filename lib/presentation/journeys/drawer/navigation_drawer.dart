@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../blocs/theme/theme_cubit.dart';
-import '../../themes/theme_color.dart';
 import 'package:wiredash/wiredash.dart';
 
 import '../../../common/constants/languages.dart';
@@ -13,7 +12,6 @@ import '../../../common/extensions/string_extensions.dart';
 import '../../blocs/language/language_cubit.dart';
 import '../../blocs/login/login_cubit.dart';
 import '../../widgets/app_dialog.dart';
-import '../../widgets/logo.dart';
 import 'navigation_expanded_list_item.dart';
 import 'navigation_list_item.dart';
 
@@ -43,9 +41,9 @@ class NavigationDrawer extends StatelessWidget {
                 left: Sizes.dimen_8.w,
                 right: Sizes.dimen_8.w,
               ),
-              child: Logo(
-                height: Sizes.dimen_20.h,
-              ),
+              // child: Logo(
+              //   height: Sizes.dimen_20.h,
+              // ),
             ),
             NavigationListItem(
               title: TranslationConstants.favoriteMovies.t(context),
@@ -72,6 +70,12 @@ class NavigationDrawer extends StatelessWidget {
                 _showDialog(context);
               },
             ),
+            BlocBuilder<ThemeCubit, Themes>(builder: (context, theme) {
+              return NavigationListItem(
+                  title: 'Tema',
+                  onPressed: () => context.read<ThemeCubit>().toggleTheme());
+            }),
+            Spacer(),
             BlocListener<LoginCubit, LoginState>(
               listenWhen: (previous, current) => current is LogoutSuccess,
               listener: (context, state) {
@@ -85,24 +89,6 @@ class NavigationDrawer extends StatelessWidget {
                 },
               ),
             ),
-            Spacer(),
-            BlocBuilder<ThemeCubit, Themes>(builder: (context, theme) {
-              return Align(
-                alignment: Alignment.center,
-                child: IconButton(
-                  onPressed: () => context.read<ThemeCubit>().toggleTheme(),
-                  icon: Icon(
-                    theme == Themes.dark
-                        ? Icons.brightness_4_sharp
-                        : Icons.brightness_7_sharp,
-                    color: context.read<ThemeCubit>().state == Themes.dark
-                        ? Colors.white
-                        : AppColor.vulcan,
-                    size: Sizes.dimen_40.w,
-                  ),
-                ),
-              );
-            }),
           ],
         ),
       ),
